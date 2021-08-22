@@ -11,7 +11,7 @@ body{
 
 header{
     width: 100%;
-    background-color: rgb(0, 0, 70);
+    background: rgb(0, 0, 70);
     color: #ffffff;
     display: flex;
     flex-flow: column;
@@ -20,11 +20,34 @@ header{
     padding:24px;
 }
 
+
 .dp{
     width: 100px;
     border-radius: 50%;
+    
 }
-
+/* .anim{
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: ease-in-out 1s;
+}
+.anim2{
+    opacity: 0;
+    transform: translateX(400px);
+    transition: ease-in-out 1s;
+}
+.active{
+    opacity: 1;
+    transform: translateX(0px);
+    scale: 1;
+    transition: ease-in-out 0.5s;
+}
+.active2{
+    opacity: 1;
+    transform: translateX(0px);
+    scale: 1;
+    transition: ease-in-out 0.5s;
+} */
 .track{
     font-weight: normal;
 }
@@ -38,19 +61,26 @@ header{
 }
 
 .resume div{
-    margin: 50px 50px;
+    margin: 10px 50px;
 }
 
 .left{
+    display: flex;
+    flex-flow: column;
     width: 60%;
     border-right: double 5px;
 }
-
+.info{
+    display: flex;
+    flex-flow: column;
+}
 .info div{
     margin: 10px 0;
 }
 
 .right{
+    display: flex;
+    flex-flow: column;
     width: 40%;
 }
 
@@ -59,11 +89,13 @@ header{
     margin: 20px;
     text-decoration: underline;
     text-decoration-style: double;
+    word-wrap: nowrap;
 }
 
 .socials{
     display: flex;
     flex-flow: row;
+    color: rgb(0, 0, 70);
 }
 
 .fas, .fab{
@@ -79,7 +111,18 @@ table{
 .table-head{
     font-weight: bold;
 }
+.resume_download{
+    text-decoration: none;
+    width: 300px;
+    min-width: 150px;
+    height: 44px;
+    color: #ffffff;
+    background: rgb(0,0,70);
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px ;
 
+}
 
 /*****RESPONSIVENESS********/
 
@@ -88,6 +131,9 @@ table{
     
     .resume div{
         margin: 20px 10px;
+    }
+    .resume_download{
+        width: 250px;
     }
 }
 
@@ -108,10 +154,13 @@ table{
         display: flex;
         flex-flow: column;
         align-items: left;
-        justify-content: left;
+        justify-content: center;
     }
 
     .resume div{
-        margin: 20px 10px;
+        margin: 10px 10px;
+    }
+    .resume_download{
+        width: 200px;
     }
 }
