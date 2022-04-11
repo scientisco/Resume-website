@@ -75,7 +75,7 @@ header{
     flex-flow: column;
 }
 .info div{
-    margin: 10px 0;
+    margin: 4px 0;
 }
 
 .right{
@@ -97,6 +97,7 @@ header{
     flex-flow: row;
     color: rgb(0, 0, 70);
 }
+
 
 .fas, .fab{
     margin: 5px;
@@ -156,7 +157,9 @@ table{
         align-items: left;
         justify-content: center;
     }
-
+    .info{
+        font-size: 1.2em;
+    }
     .resume div{
         margin: 10px 10px;
     }
